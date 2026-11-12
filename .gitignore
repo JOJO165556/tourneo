@@ -1,0 +1,22 @@
+# Environnement et cache Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Outils de dev
+.vscode/*
+.env
+
+# Données volumineuses générées (le sample reste versionné)
+data/clients.parquet
+data/commandes/
+data/vehicules.csv
+data/depot.csv
+data/indicateurs/
+data/bench_temps.txt
+data/_bench_commandes.csv
+
+# Artefacts de build
+*.egg-info/

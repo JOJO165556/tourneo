@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tourneo"
+version = "0.1.0"
+description = "Plateforme d'optimisation logistique pour Lomé"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb==2.0.0",
+    "numpy==2.5.4",
+    "pandas>=2.2.3,<3.0.0",
+    "plotly==7.1.0",
+    "py4j==0.10.9.9",
+    "pyarrow==26.0.1",
+    "pyspark==4.3.0",
+    "python-dateutil==4.0.0",
+    "tzdata==2026.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.2.0",
+]
+
+[project.scripts]
+tourneo-generate = "tourneo.generate:main"
+tourneo-validate = "tourneo.validate:main"
+tourneo-storage = "tourneo.storage:main"
+tourneo-analysis = "tourneo.analysis:main"
+tourneo-dashboard = "tourneo.dashboard:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -17,6 +17,7 @@ data/depot.csv
 data/indicateurs/
 data/bench_temps.txt
 data/_bench_commandes.csv
+data/tournees/
 
 # Artefacts de build
 *.egg-info/

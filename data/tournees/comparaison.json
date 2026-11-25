@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "mode": "equilibre",
+  "penalite_retard": 20,
+  "commandes_du_jour": 42,
+  "commandes_retenues": 42,
+  "source_matrice": "osrm",
+  "naif": {
+    "km": 81.4,
+    "cout_fcfa": 26248,
+    "retards": 23,
+    "retard_min": 5763,
+    "cout_total_fcfa": 1178877,
+    "non_livrees": 0,
+    "vehicules_utilises": 4
+  },
+  "optimise": {
+    "km": 82.2,
+    "cout_fcfa": 26575,
+    "retards": 5,
+    "retard_min": 11,
+    "cout_total_fcfa": 28726,
+    "non_livrees": 0,
+    "vehicules_utilises": 4
+  },
+  "gain_cout_transport_pct": -1.2,
+  "gain_retard_min_pct": 99.8,
+  "gain_cout_total_pct": 97.6,
+  "non_livrees": []
+}

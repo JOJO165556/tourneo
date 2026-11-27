@@ -8,3 +8,8 @@ pyspark==4.3.0
 python-dateutil==4.0.0
 pytz==2026.6
 tzdata==2026.6
+ortools==9.15.6755
+reportlab==5.1.2
+requests==2.34.2
+streamlit==1.67.0
+streamlit-folium==0.27.4

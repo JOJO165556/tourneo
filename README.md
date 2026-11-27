@@ -1,7 +1,7 @@
 # Tourneo : Pipeline logistique de Lomé
 
 Génération, validation, stockage et analyse de données de livraison
-simulées sur le Grand Lomé. Stack : Python, pandas, PyArrow, DuckDB, PySpark, Plotly, OR-Tools, Streamlit, ReportLab.
+simulées sur le Grand Lomé. Stack : Python, pandas, PyArrow, DuckDB, PySpark, Plotly, OR-Tools, Streamlit,folium, ReportLab.
 
 Le projet comprend trois modules : les données et le big data (module 1), l'optimisation
 des tournées de livraison (module 2) et une application web OptiLomé qui relie le tout (module 3).
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-Le fichier `requirements.txt` doit contenir `ortools`, `requests`, `streamlit` et `reportlab`
+Le fichier `requirements.txt` doit contenir `ortools`, `requests`, `streamlit`,`folium` et `reportlab`
 en plus des dépendances du module 1.
 
 Si le dossier du projet est déplacé ou renommé, relancer `pip install -e .` depuis son nouvel emplacement.
@@ -252,7 +252,7 @@ Les étapes 1 et 4 (génération des données puis calcul des indicateurs) doive
 **Onglet Planification :**
 - choix du jour, des quartiers, de la priorité et du scénario ;
 - indicateurs de comparaison (méthode naïve et optimisé, ou avant et après le scénario) ;
-- carte interactive : un itinéraire par véhicule sur les routes, arrêts numérotés par ordre de passage, légende ;
+- deux cartes au choix : interactive (PyDeck) et détaillée (Folium, avec flèches de direction, plusieurs fonds de carte dont le satellite, plein écran et export en page web) ; un itinéraire par véhicule sur les routes, arrêts numérotés par ordre de passage, légende avec filtre par véhicule ;
 - avertissements : commandes non planifiées, distances estimées sans OSRM, commandes non livrées ;
 - tableau des arrêts, export CSV et export PDF (une page de synthèse et une feuille de route par véhicule).
 

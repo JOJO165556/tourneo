@@ -101,7 +101,7 @@ def construire_carte_folium(points, trajets, depart):
             popup=folium.Popup(detail, max_width=320),
         ).add_to(carte)
     etiquette = (
-        "<div style='background:#000;color:#fff;padding:3px 9px;border-radius:4px;font-weight:bold;"
+        "<div style='display:inline-block;background:#000;color:#fff;padding:3px 9px;border-radius:4px;font-weight:bold;"
         "font-size:12px;white-space:nowrap;transform:translate(-50%,-50%)'>DÉPÔT</div>"
     )
     folium.Marker([depart[1], depart[0]], icon=folium.DivIcon(html=etiquette, icon_size=(0, 0)), tooltip="Dépôt").add_to(carte)
